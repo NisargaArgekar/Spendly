@@ -12,18 +12,18 @@ function Header (){
         <div className='p-5 flex justify-between items-center border shadow-sm'>
             <div className='flex flex-row items-center'>
                 {/*Logo I have to add here*/}
-                <Image src="/icon1.png" alt='logo' width={40} height={25}/>
+                <Image src="/icon3.png" alt='logo' width={40} height={25}/>
                 <span className='text-orange-500 text-xl font-bold'>Spendly</span>
             </div>
             {isSignedIn ? (<UserButton/>) : (
                 <div className='flex gap-3 items-center'>
                 <Link href='/dashboard'>
-                    <Button variant="outline" className="rounded-full">
+                    <Button variant="outline" className="rounded-full text-orange-500 cursor-pointer">
                         Dashboard
                     </Button>
                 </Link>
                  <Link href='/dashboard'>
-                    <Button  variant="outline" className="rounded-full text-">
+                    <Button  variant="outline" className="rounded-full text-orange-500 cursor-pointer">
                        Get Started
                     </Button>
                 </Link>

@@ -22,7 +22,7 @@ function Hero(){
       >
         <img
         // need add a image after completing dashboard 
-          src={`/icon1.png`} 
+          src={`/icon3.png`} 
           alt="hero"
           height={720}
           width={1400}
