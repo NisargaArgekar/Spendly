@@ -1,6 +1,38 @@
 import React from 'react';
 import Image from 'next/image';
-function  Hero(){
+import { ContainerScroll } from '@/components/container-scroll-animation';
 
+
+
+function Hero(){
+    return (
+        <section className='bg-gray-50 flex items-center flex-col'>
+            <div className="flex flex-col overflow-hidden">
+      <ContainerScroll
+        titleComponent={
+          <>
+            <h1 className="text-4xl font-semibold text-black dark:text-white">
+             Automate your financial planning with<br />
+              <span className="text-4xl md:text-[6rem] text-orange-500 font-bold mt-1 leading-none">
+             AI Precision
+              </span>
+            </h1>
+          </>
+        }
+      >
+        <img
+        // need add a image after completing dashboard 
+          src={`/icon1.png`} 
+          alt="hero"
+          height={720}
+          width={1400}
+          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          draggable={false}
+        />
+      </ContainerScroll>
+    </div>
+        </section>
+    )
 
 }
+export default Hero;
